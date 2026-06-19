@@ -11,7 +11,9 @@ const Footer = () => {
   };
 
   return (
-    <footer className="text-white py-8 px-[12vw] md:px-[7vw] lg:px-[20vw]">
+    <footer
+    id="footer"
+    className="text-white bg-[#251f38] py-8 px-[12vw] md:px-[7vw] lg:px-[20vw]">
       <div className="container mx-auto text-center">
         {/* Name / Logo */}
         <h2 className="text-xl font-semibold text-purple-500">Hooria Hoor</h2>
@@ -21,9 +23,8 @@ const Footer = () => {
           {[
             { name: "About", id: "about" },
             { name: "Skills", id: "skills" },
-            { name: "Experience", id: "experience" },
             { name: "Projects", id: "projects" },
-            { name: "Education", id: "education" },
+           
           ].map((item, index) => (
             <button
               key={index}
@@ -57,7 +58,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright Text */}
-        <p className="text-sm text-gray-400 mt-6">
+        <p className=" text-sm text-gray-400 mt-6">
           © 2025 Hooria Hoor. All rights reserved.
         </p>
       </div>
@@ -66,3 +67,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
