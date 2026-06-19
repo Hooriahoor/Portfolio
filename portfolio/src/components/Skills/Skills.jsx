@@ -6,23 +6,26 @@ const Skills = () => {
   return (
     <section
     id='skills'
-    className='py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans bg-skills-gradient'
+    className='py-24 px-4 sm:px-6 md:px-[5vw] lg:px-[16vw] font-sans bg-skills-gradient'
     >
       {/* Section Title */}
-      <div className='text-center mb-8'>
+      <div className='text-center mb-3'>
         <h2 className='text-3xl sm:text-4xl font-bold text-white'>SKILLS</h2>
         <div className='w-24 h-1 bg-[#8245ec] mx-auto mt-2'>
 </div>
-<p className='text-gray-400 mt-4 text-lg font-semibold' >A collection of my technical skills and expertise honed through various projects and experiences.</p>
+
+<p className='text-gray-400 mt-4 text-base sm:text-lg font-semibold max-w-3xl mx-auto'>
+A collection of my technical skills and expertise honed through various projects and experiences.</p>
       </div>
 
       {/* Skills categories */}
-      <div className='flex flex-wrap gap-1 lg:gap-5 py-10 justify-between'>
+      <div className='flex flex-wrap gap-6 py-10 justify-center md:justify-between'>
         {
           SkillsInfo.map((category) => (
             <div
              key={category.title}
-              className='bg-gray-900 backdrop-blur-md px-6 sm:px-10 py-8 sm:py-6 mb-10 w-full sm:w-[48%] rounded-2xl border-white shadow-[0_0_20px_1px_rgba(130,69,236,0.5)]'>
+             className='bg-gray-900 backdrop-blur-md px-6 sm:px-10 py-8 sm:py-6 mb-10 w-full md:w-[48%] rounded-2xl border-white shadow-[0_0_20px_1px_rgba(130,69,236,0.5)]'
+          >
 
               <h3 className='text-2xl font-semibold text-gray-400 text-center'>{category.title}</h3>
 
