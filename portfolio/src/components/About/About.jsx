@@ -9,7 +9,7 @@ const About = () => {
   return (
     <section
       id='about'
-      className='py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-16 md:mt-24 lg:mt-32'
+      className='py-4 px-4 sm:px-6 md:px-[7vw] lg:px-[16vw] font-sans mt-5 md:mt-8 lg:mt-15'
     >
       <div className='flex flex-col-reverse md:flex-row justify-between items-center'>
 
@@ -48,12 +48,8 @@ const About = () => {
 </h3>
 
           {/* About Paragraph */}
-          <p className='text-gray-400 mt-8 mb-10 leading-relaxed text-base sm:text-lg md:text-lg'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Aliquid aperiam commodi veritatis labore asperiores velit
-            fuga impedit distinctio necessitatibus optio, quos
-            praesentium debitis! Asperiores libero optio at laudantium
-            reprehenderit esse!
+          <p className='text-gray-400 mt-6 mb-8 leading-relaxed text-base sm:text-lg max-w-2xl mx-auto md:mx-0'>
+            I am a passionate Frontend Developer and UI/UX Designer with a strong foundation in web development. I specialize in creating visually appealing and user-friendly interfaces that provide seamless user experiences. With a keen eye for design and a love for coding, I strive to bring innovative ideas to life through clean and efficient code. My goal is to contribute to projects that make a positive impact and leave a lasting impression on users.
           </p>
 
           {/* Resume Button */}
@@ -72,7 +68,7 @@ const About = () => {
         </div>
             
             {/* Right side */}
-            <div className='md:w-1/2 flex justify-center md:justify-end ml-15'>
+            <div className='md:w-1/2 flex justify-center md:justify-end'>
             <Tilt className='w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] border-purple-700 rounded-full'
             tiltMaxAngleX={20}
             tiltMaxAngleY={20}
